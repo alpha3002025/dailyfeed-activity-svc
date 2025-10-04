@@ -5,4 +5,5 @@ include(
     "dailyfeed-activity",
     "dailyfeed-redis-support",
     "dailyfeed-kafka-support",
+    "dailyfeed-pagination-support",
 )
