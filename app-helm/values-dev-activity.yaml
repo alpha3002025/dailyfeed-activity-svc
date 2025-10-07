@@ -20,7 +20,7 @@ envValues:
   value: http://dailyfeed-image-svc.dailyfeed.svc.cluster.local
 configSecretItems:
 - kafka
-- redis-nosecret
+- redis
 - mysql
 - mongodb
 porbeValues:
