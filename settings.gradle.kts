@@ -8,4 +8,5 @@ include(
     "dailyfeed-redis-support",
     "dailyfeed-kafka-support",
     "dailyfeed-pagination-support",
+    "dailyfeed-deadletter-support",
 )

@@ -22,3 +22,6 @@
 [submodule "dailyfeed-pvc-support"]
 	path = dailyfeed-pvc-support
 	url = https://github.com/alpha3002025/dailyfeed-pvc-support
+[submodule "dailyfeed-deadletter-support"]
+	path = dailyfeed-deadletter-support
+	url = https://github.com/alpha3002025/dailyfeed-deadletter-support
