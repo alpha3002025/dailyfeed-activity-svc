@@ -11,8 +11,8 @@ cd ..
 echo ""
 
 
-echo "dailyfeed-infrastructure"
-cd dailyfeed-infrastructure
+echo "dailyfeed-deadletter-support"
+cd dailyfeed-deadletter-support
 git pull origin main
 cd ..
 echo ""
@@ -33,14 +33,14 @@ echo ""
 
 
 echo "dailyfeed-kafka-support"
-cd dailyfeed-redis-support
+cd dailyfeed-kafka-support
 git pull origin main
 cd ..
 echo ""
 
 
-echo "dailyfeed-timeline"
-cd dailyfeed-timeline
+echo "dailyfeed-activity"
+cd dailyfeed-activity
 git pull origin main
 cd ..
 echo ""
