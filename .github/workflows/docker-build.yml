@@ -60,7 +60,9 @@ jobs:
 
       - name: Build and Push Docker Image with Jib
         run: |
-          ./gradlew :dailyfeed-activity:jib --info
+          ./gradlew :dailyfeed-activity:jib --info \
+            -Djib.httpTimeout=120000 \
+            -Djib.serialize=true
         env:
           IMAGE_VERSION: ${{ env.IMAGE_VERSION }}
           GITHUB_USERNAME: ${{ github.actor }}

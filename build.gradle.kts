@@ -2,7 +2,7 @@ plugins {
     java
     id("org.springframework.boot") version "3.5.5" apply false
     id("io.spring.dependency-management") version "1.1.7" apply false
-    id("com.google.cloud.tools.jib") version "3.4.0"
+    id("com.google.cloud.tools.jib") version "3.4.5"
 }
 
 allprojects {
@@ -69,6 +69,14 @@ project(":dailyfeed-activity") {
         dockerClient {
             executable = "/usr/local/bin/docker"
         }
+
+        // 네트워크 타임아웃 설정 (GitHub Actions에서 큰 blob 업로드 시 타임아웃 방지)
+        extraDirectories {
+            permissions = mapOf()
+        }
+
+        // Jib 플러그인 설정 (타임아웃 증가)
+        containerizingMode = "packaged"
 
         // 컨테이너 설정
         container {
