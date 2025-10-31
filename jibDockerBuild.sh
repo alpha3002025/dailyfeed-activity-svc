@@ -1,2 +1,2 @@
 ./gradlew :dailyfeed-activity:jibDockerBuild
-docker push alpha300uk/dailyfeed-activity-svc:beta-20251015-0003
+docker push ghcr.io/alpha3002025/dailyfeed-activity-svc:cbt-20251031-1

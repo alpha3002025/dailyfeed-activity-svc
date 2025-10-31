@@ -46,6 +46,10 @@ project(":dailyfeed-activity") {
         // Base 이미지 설정 (Java 17 기반)
         from {
             image = "eclipse-temurin:17-jre-alpine"
+            auth {
+                username = System.getenv("DOCKER_USERNAME") ?: ""
+                password = System.getenv("DOCKER_PASSWORD") ?: ""
+            }
         }
 
         // 타겟 이미지 설정
