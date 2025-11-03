@@ -6,6 +6,7 @@ build/
 !**/src/test/**/build/
 dailyfeed-activity.log
 .claude
+**/.DS_Store
 
 ### STS ###
 .apt_generated
